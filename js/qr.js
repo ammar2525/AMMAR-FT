@@ -79,7 +79,7 @@ function qrPng(name, link){
   const img = new Image();
   img.onload = () => {
     const W = 600, H = 760, c = document.createElement("canvas"); c.width = W; c.height = H; const g = c.getContext("2d");
-    g.fillStyle = "#A7B4A0"; g.fillRect(0, 0, W, H);
+    g.fillStyle = "#724B24"; g.fillRect(0, 0, W, H);
     g.fillStyle = "#fffdf8"; g.beginPath(); g.roundRect(30, 120, W - 60, H - 150, 28); g.fill();
     g.direction = "rtl"; g.textAlign = "center"; g.fillStyle = "#f1d796"; g.font = "bold 40px Tajawal, sans-serif"; g.fillText("شجرة العائلة", W / 2, 70);
     g.fillStyle = "#d6dcea"; g.font = "22px Tajawal, sans-serif"; g.fillText("دخول مباشر بدون كلمة سر", W / 2, 104);
@@ -97,7 +97,7 @@ function qrPrint(items){
   w.document.write(`<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><title>بطاقات الدخول السريع</title>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;800&display=swap" rel="stylesheet">
     <style>body{font-family:Tajawal,sans-serif;margin:0;padding:12mm;color:#1a2235}.g{display:grid;grid-template-columns:repeat(3,1fr);gap:8mm}
-    .c{border:1.5px solid #A7B4A0;border-radius:5mm;padding:5mm;text-align:center;break-inside:avoid}.c h4{margin:0;color:#A7B4A0;font-size:14pt}
+    .c{border:1.5px solid #724B24;border-radius:5mm;padding:5mm;text-align:center;break-inside:avoid}.c h4{margin:0;color:#724B24;font-size:14pt}
     .c small{display:block;color:#7c8496;font-size:9pt}.c svg{width:42mm;height:42mm;margin:3mm auto;display:block}.c b{font-size:12pt}
     @media print{body{padding:6mm}}</style></head><body><div class="g">${items.map(i => `<div class="c"><h4>شجرة العائلة</h4><small>دخول مباشر بدون كلمة سر</small>${qrSvg(i.link, 4)}<b>${esc(i.name)}</b><small>امسح الرمز بكاميرا الجوال</small></div>`).join("")}</div>
     <script>setTimeout(()=>print(),600)<\/script></body></html>`);
