@@ -10,7 +10,7 @@ const MK_ICON = {
   all:'<rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/>',
 };
 const MK_CATS = [
-  {k:"", n:"الكل", ic:"all", c:"#724B24"}, {k:"food", n:"مطاعم وحلويات", ic:"food", c:"#c76a2b"}, {k:"home", n:"خدمات منزلية", ic:"home", c:"#2b6cc4"},
+  {k:"", n:"الكل", ic:"all", c:"#724B24"}, {k:"food", n:"مطاعم وحلويات", ic:"food", c:"#c76a2b"}, {k:"home", n:"خدمات منزلية", ic:"home", c:"#8F6B45"},
   {k:"shop", n:"تجارة وملابس", ic:"shop", c:"#c0477a"}, {k:"edu", n:"تعليم ودروس", ic:"edu", c:"#7a4fc0"}, {k:"care", n:"صحة وجمال", ic:"care", c:"#1f8a4c"},
   {k:"car", n:"سيارات", ic:"car", c:"#4a5468"}, {k:"other", n:"أخرى", ic:"other", c:"#9c7a3c"},
 ];
